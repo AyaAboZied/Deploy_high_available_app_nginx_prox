@@ -1,9 +1,7 @@
 # Deploy_high_available_app_nginx_prox
 Deploy high available app with nginx &amp; proxy using terraform modules
 
-Create vpc that have 2 public Ec2 run nginx
-Use Elastic load balancer to distribute traffic between then 
-connect with private Elastic load balancer that distribute traffic between 2 private Ec2 have Apache Server 
+Create vpc that has 4 Ec2 two in a public subnet that contains nginx with ALB to load balancing between them and they send a signal to the new ALB to load balancing between the 2 private Ec2  that have Apache
 
 
 
